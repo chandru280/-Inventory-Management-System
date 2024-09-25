@@ -18,7 +18,7 @@ class ItemViewSet(viewsets.ViewSet):
                 serializer.save()
                 return Response(serializer.data, status=status.HTTP_201_CREATED)
             except Exception as e:   
-                return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)  # Return the error message
+                return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)   
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
     
