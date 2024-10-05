@@ -1,10 +1,18 @@
 # Inventory Management System
 
-This is an Inventory Management System built using Django and Django REST Framework. It provides an API for managing inventory items, including functionalities for creating, reading, updating, and deleting items. The system also utilizes Redis for caching and PostgreSQL as the database.
+This project is an **Inventory Management System** built with **Django** and **Django REST Framework (DRF)**. The system provides APIs to manage inventory items, register users, handle user authentication with JWT tokens, and enable user logout. The backend uses **PostgreSQL** as the database, and **Redis** for caching to improve performance.
+
+## Features
+
+- **Inventory Management**: Create, read, update, and delete inventory items.
+- **User Authentication**: JWT-based authentication to secure access to the system.
+- **User Registration**: New users can register and create an account.
+- **Logout**: Authenticated users can log out.
+- **Caching**: Redis is used for caching frequently accessed data.
 
 ## Requirements
 
-To run this project, you need the following Python packages:
+To run the project, you need the following Python packages:
 
 - **asgiref**: Version 3.8.1
 - **Django**: Version 5.1.1
